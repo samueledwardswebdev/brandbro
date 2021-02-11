@@ -372,9 +372,11 @@ footer {
   .content {
     text-align: center;
     padding-bottom: 30px;
+    flex-direction: column;
   }
 
   .content h4 {
+    font-size: 2rem;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -408,7 +410,13 @@ footer {
 
   .box {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px;
+  }
+
+  .box p {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px;
   }
   
   #contact {
