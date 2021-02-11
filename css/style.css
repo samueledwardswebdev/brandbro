@@ -47,6 +47,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  position: sticky;
+  opacity: 0.9;
+  top: 0;
 }
 
 .navbar .logo {
