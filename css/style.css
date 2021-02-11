@@ -349,6 +349,10 @@ footer {
 }
 
 @media(max-width: 768px) {
+  #home {
+    height: 100%;
+  }
+  
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -376,6 +380,7 @@ footer {
   }
 
   .content h4 {
+    padding-top: 50px;
     font-size: 2rem;
     width: 90%;
     margin: 0 auto;
