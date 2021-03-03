@@ -1,3 +1,4 @@
+
 $('#navbar a, .btn').on('click', function (e) {
   if (this.hash !== '') {
     e.preventDefault();
