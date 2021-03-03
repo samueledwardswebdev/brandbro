@@ -109,6 +109,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.content > .btn {
+  padding: 1rem 2rem;
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -232,7 +236,12 @@ body {
   text-align: center;
   padding-bottom: 1rem;
   border-radius: 5px;
-  color: var(--light-color)
+  color: var(--light-color);
+  transition: ease all 0.5s;
+}
+
+.box:hover {
+  opacity: 0.8;
 }
 
 .box img,
@@ -295,7 +304,14 @@ body {
   border: none;
   border-radius: 5px;
   box-shadow: 3px 3px 10px 1px rgb(0,0,0,0.4);
+  transition: ease all 0.5s
 }
+
+.pricing-wrapper .card:hover {
+  padding: 3rem 1rem;
+}
+
+
 
 .pricing-wrapper .card h5 {
   text-align: center;
@@ -306,6 +322,10 @@ body {
   font-size: 3rem;
   text-align: center;
   font-weight: bold;
+}
+
+.pricing-wrapper .card ul {
+  list-style: none;
 }
 
 .pricing-wrapper .card ul li {
