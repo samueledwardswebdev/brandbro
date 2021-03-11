@@ -187,16 +187,39 @@ body {
 }
 
 .column-right p {
-  margin-bottom: 30px;
-  padding: 0 10px;
+  margin-bottom: 30px; 
 }
 
 .column-right .btn {
   margin: 0 auto;
+  padding: 0.6rem 1.2rem;
+}
+
+.column-right .btn:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* Banner */
+
+#banner {
+  width: 100%;
+  background: var(--green-color);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#banner h2 {
+  width: 80%;
+  margin: auto;
 }
 /* Services */
 
 #services {
+  background: var(--light-color);
+}
+
+.services-wrapper {
   background: var(--light-color);
   height: 100vh;
   display: flex;
@@ -205,20 +228,19 @@ body {
   align-items: center;
 }
 
-#services h4 {
+.services-wrapper h4 {
   color: var(--dark-color);
   text-align: center;
   font-size: 3rem;
-  padding-top: 2rem;
   letter-spacing: 2.5px;
 }
 
-#services > p {
+.services-wrapper > p {
   color: var(--dark-color);
   padding-top: 1rem;
 }
 
-#services .container {
+.services-wrapper .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,7 +295,7 @@ body {
   text-align: center;
   font-size: 2.6rem;
   letter-spacing: 2.5px;
-  margin-bottom: 30px;
+  margin: 3rem 0;
 }
 
 #pricing > p {
@@ -374,6 +396,10 @@ body {
 
 #contact {
   background: var(--dark-color);
+}
+
+.contact-container {
+  background: var(--dark-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -384,7 +410,7 @@ body {
 .form-wrapper {
   max-width: 400px;
   background: var(--light-color);
-  margin: 5rem auto;
+  margin: 1rem auto 3rem auto;
   padding: 1.5rem;
   border-radius: 10px;
 }
@@ -470,11 +496,16 @@ footer {
   color: var(--dark-color);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 500px) {
   #home {
-    height: 100%;
+    height: 100vh;
   }
   
+  svg {
+    display: none;
+  }
+  
+
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -518,17 +549,21 @@ footer {
     text-align: center;
   }
 
-  #services {
+  .services-wrapper {
     height: 100%;
   }
 
-  #services p {
+  .services-wrapper p {
     width: 80%;
     text-align: center;
     margin-bottom: 30px;
   }
 
-  #services .container {
+  .services-wrapper h4 {
+    margin: 20px 0;
+  }
+
+  .services-wrapper .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -546,8 +581,21 @@ footer {
     padding: 10px 10px;
   }
   
-  #contact {
+  #contact .contact-container{
     background: var(--light-color);
+  }
+
+  .form-wrapper {
+    background: var(--dark-color);
+  }
+
+  .form-wrapper h4,
+  .form-wrapper p {
+    color: var(--light-color);
+  }
+
+  .form-wrapper .form-item label {
+    color: var(--light-color);
   }
 
   footer {
